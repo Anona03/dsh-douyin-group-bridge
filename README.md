@@ -2,7 +2,7 @@
 
 > 把 **抖音网页版群聊** 接入 **DeepSeek Harness (DSH)** 原生会话的插件：无需逆向私密协议或额外 Python/Playwright 环境，扫码登录后即可自动检索账号里的群聊，把群消息（含图片与上下文）注入 DSH 会话，并由 AI 自主决策或自动回发到群里。
 
-实现思路参考自 [Anona03/douyin-rpa-bridge](https://github.com/Anona03/douyin-rpa-bridge)（React Fiber 群消息穿透、头像 `midX` 方向判定、`@` 触发与单行安全发送）以及 DSH 插件生态实践。
+
 
 ---
 
