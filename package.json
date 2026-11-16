@@ -1,0 +1,66 @@
+{
+  "name": "dsh-douyin-group-bridge",
+  "version": "0.1.0",
+  "description": "DSH 插件：把抖音群聊接进 DeepSeek Harness 会话 —— React Fiber 群消息提取、@ 触发唤醒、上下文注入与安全单行回复",
+  "author": "Anona03",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anona03/dsh-douyin-group-bridge.git"
+  },
+  "homepage": "https://github.com/Anona03/dsh-douyin-group-bridge#readme",
+  "bugs": {
+    "url": "https://github.com/Anona03/dsh-douyin-group-bridge/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "douyin",
+    "group-chat",
+    "im",
+    "bridge"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "lib",
+    "prompts",
+    "locale",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "node selfcheck.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "engines": {
+    "dsh": ">=0.1.7-rc.1",
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-settings-plugins"
+      ]
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "抖音群聊桥接",
+    "description": "连接抖音网页版群聊与 DeepSeek Harness 会话：基于 React Fiber 消息解析、@ 触发唤醒、上下文注入与安全单行回复。"
+  }
+}

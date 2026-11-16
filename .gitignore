@@ -1,0 +1,14 @@
+node_modules/
+.env
+*.log
+*.tgz
+.DS_Store
+Thumbs.db
+runtime/
+profile/
+shots/
+outbox/
+diag.json
+sessions.json
+config.json
+discovered-groups.json

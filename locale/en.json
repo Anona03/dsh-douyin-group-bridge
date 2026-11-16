@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Douyin Group Bridge",
+    "description": "Bridge Douyin Web group chats with DeepSeek Harness sessions using React Fiber message extraction, @mention triggers, and context injection."
+  }
+}

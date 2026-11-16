@@ -1,0 +1,18 @@
+- insert:
+    - id: douyin-group-bridge
+      name: dsh-douyin-group-bridge
+      config:
+        enabled: true
+        autoDiscoverOnLogin: true
+        autoWatchDiscovered: false
+        mode: simulation
+        triggerMode: mention
+        pollIntervalMs: 5000
+        groups: []
+        mentionAliases:
+          - DeepSeek
+          - DS
+          - 机器人
+        contextMessages: 8
+        maxInjectChars: 4000
+        browserPort: 47882
